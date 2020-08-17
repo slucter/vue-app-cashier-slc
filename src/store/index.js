@@ -56,7 +56,7 @@ export default new Vuex.Store({
   actions: {
     getAllMenus (context, { page, search }) {
       axios.get(`http://${process.env.VUE_APP_BASE_URL}/api/AllMenu/page/?page=${page}&limit=12&search=${search}`).then((result) => {
-        context.commit('GEhiddenT_ALL_MENU', result.data)
+        context.commit('GET_ALL_MENU', result.data)
         console.log(page)
       })
     },

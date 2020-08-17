@@ -11,10 +11,10 @@
             </div>
             <div class="input-modal-add">
               <h3>Image</h3>
-              <input type="file" ref="gambar" @change="onFileSelect"
+              <input type="file" ref="gambar" @change.prevent="onFileSelect"
               style="display: none" placeholder="input a image">
               <div class="wrap-btn-img">
-                <button @click="$refs.gambar.click()">select images</button>
+                <button @click.prevent="$refs.gambar.click()">select images</button>
               </div>
             </div>
             <div class="input-modal-add">
@@ -34,7 +34,7 @@
             </div>
             <div class="btn-wrap-modal">
               <button type="reset" style="background-color: #F24F8A;">Cancel</button>
-              <button @click="addMenu">Add</button>
+              <button @click.prevent="addMenu">Add</button>
             </div>
           </form>
         </div>
