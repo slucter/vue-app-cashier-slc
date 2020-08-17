@@ -64,8 +64,8 @@ VUE_APP_BASE_URL=YOUR_API_KEY
 <br>
 <div align="center">
     <h4 align="center">DASHBOARD, HISTORY PAGE</h4>
-    <img width="430" src="./src/assets/img/thumb-readme/cashier-history.png">   
-    <img width="430" src="./src/assets/img/thumb-readme/cashier-login.png">
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-home.png">
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-history.png">  
 </div>
 <br>
 <div align="center">
