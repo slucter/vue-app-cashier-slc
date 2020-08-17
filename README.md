@@ -5,7 +5,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/slucter/vue-app-cashier-slc?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/slucter/vue-app-cashier-slc?style=social)
 ![Tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com/slucter/vue-app-cashier-slc)
-)
+
 
 <p align="center">
   <img height="100" src="https://vuejs.org/images/logo.png">
@@ -37,7 +37,7 @@
 ## Usage for development
 
 1. Open your terminal or command prompt
-2. Type `git clone https://github.com/HiRahmat-Dev/food-cashier-vuejs.git`
+2. Type `git clone https://github.com/slucter/vue-app-cashier-slc.git`
 3. Open the folder and type `npm install` for install dependencies
 4. Create Environment Variable [here](#create-environment-variable)
 5. Before run this, you must run [backend first](#related-project-backend)
