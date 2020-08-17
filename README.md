@@ -58,14 +58,20 @@ VUE_APP_BASE_URL=YOUR_API_KEY
 ## Screenshots
 
 <div align="center">
-    <h4 align="center">LOGIN & REGISTER PAGE</h4>
-    <img width="430" src="./screenshots/food-cashier-login.gif">
-    <img width="430" src="./screenshots/food-cashier-register.png">
+    <h4 align="center">LOGIN PAGE</h4>
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-login.png">
 </div>
+<br>
 <div align="center">
-    <h4 align="center">DASHBOARD & CHECKOUT PAGE</h4>
-    <img width="430" src="./screenshots/food-cashier-landing-new.gif">   
-    <img width="430" src="./screenshots/food-cashier-checkout.png">
+    <h4 align="center">DASHBOARD, HISTORY PAGE</h4>
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-history.png">   
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-login.png">
+</div>
+<br>
+<div align="center">
+    <h4 align="center">MODAL ADD & CHECKOUT</h4>
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-add.png">   
+    <img width="430" src="./src/assets/img/thumb-readme/cashier-co.png">
 </div>
 <br>
 
