@@ -75,6 +75,11 @@ VUE_APP_BASE_URL=YOUR_API_KEY
 </div>
 <br>
 
+## Link / Website
+
+- My Portofolio Website : https://irhash.tech/
+- Eazy Cashier ( POS App ) : https://eazy-cashier.irhash.tech/
+- Maca Library ( Library App ) : https://maca-library.irhash.tech/
 
 ## Contributing
 
