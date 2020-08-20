@@ -55,14 +55,14 @@ export default new Vuex.Store({
   },
   actions: {
     getAllMenus (context, { page, search }) {
-      axios.get(`http://${process.env.VUE_APP_BASE_URL}/api/AllMenu/page/?page=${page}&limit=12&search=${search}`).then((result) => {
+      axios.get(`https://${process.env.VUE_APP_BASE_URL}/api/AllMenu/page/?page=${page}&limit=12&search=${search}`).then((result) => {
         context.commit('GET_ALL_MENU', result.data)
         console.log(page)
       })
     },
     addMenu (context, data) {
       return new Promise((resolve, reject) => {
-        axios.post(`http://${process.env.VUE_APP_BASE_URL}/api/AllMenu/add`, data).then((res) => {
+        axios.post(`https://${process.env.VUE_APP_BASE_URL}/api/AllMenu/add`, data).then((res) => {
           resolve(res)
         })
       })
@@ -70,26 +70,26 @@ export default new Vuex.Store({
     loginAction (context, data) {
       console.log(process.env.VUE_APP_BASE_URL)
       return new Promise((resolve, reject) => {
-        axios.post(`http://${process.env.VUE_APP_BASE_URL}/api/user/login`, data).then((res) => {
+        axios.post(`https://${process.env.VUE_APP_BASE_URL}/api/user/login`, data).then((res) => {
           resolve(res)
         })
       })
     },
     getUserById (context, data) {
-      axios.get(`http://${process.env.VUE_APP_BASE_URL}/api/user/get/${data}`).then((result) => {
+      axios.get(`https://${process.env.VUE_APP_BASE_URL}/api/user/get/${data}`).then((result) => {
         context.commit('USER_DATA', result.data)
       })
     },
     checkOutOrder (context, data) {
       return new Promise((resolve, reject) => {
-        axios.post(`http://${process.env.VUE_APP_BASE_URL}/api/AllMenu/order`, data).then((result) => {
+        axios.post(`https://${process.env.VUE_APP_BASE_URL}/api/AllMenu/order`, data).then((result) => {
           resolve(result)
         })
       })
     },
     getAllOrder (context, data) {
       return new Promise((resolve, reject) => {
-        axios.get(`http://${process.env.VUE_APP_BASE_URL}/api/AllMenu/AllOrder`).then((result) => {
+        axios.get(`https://${process.env.VUE_APP_BASE_URL}/api/AllMenu/AllOrder`).then((result) => {
           resolve(result)
         })
       })
