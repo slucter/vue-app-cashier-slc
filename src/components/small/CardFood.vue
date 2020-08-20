@@ -1,6 +1,6 @@
 <template>
     <div class="card-food">
-        <a href="#">
+        <a>
             <img
             @click="$emit('clickCard')"
             :src="image" alt="image">
