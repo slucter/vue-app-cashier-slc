@@ -62,6 +62,7 @@ export default {
     if (localStorage.isToken) {
       this.$router.push('/dashboard')
     }
+    swal.fire('Here is demo user for login', 'username: slc, password: slc', 'warning')
   }
 }
 </script>
