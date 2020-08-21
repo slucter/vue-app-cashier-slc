@@ -226,4 +226,14 @@ export default {
   font-weight: bold;
   margin: 10px;
 }
+ @media (min-width: 1044px){
+   .wrap-modal{
+     width: 50%;
+   }
+ }
+  @media (min-width: 1344px){
+   .wrap-modal{
+     width: 35%;
+   }
+ }
 </style>

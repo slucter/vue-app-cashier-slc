@@ -145,4 +145,117 @@ export default {
     font-weight: bold;
     color: #57CAD5;
 }
+
+@media (min-width: 1045px){
+    .navbar-food{
+        width: 100vw;
+        height: 7vh;
+        position: fixed;
+        top:0;
+        right: 0;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 0px 30px 20px rgba(0,0,0,.15);
+    }
+    .burger-food{
+    width: 100px;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .burger-food span{
+        position: relative;
+        width: 40px;
+        height: 4px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .burger-food span::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: -7px;
+        transition: .5s;
+    }
+    .burger-food span::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 7px;
+        transition: .5s;
+    }
+    .burger-wd span::after{
+        content: '';
+        width: 40%!important;
+        transition: .5s;
+    }
+    .burger-wd span::before{
+        content: '';
+        width: 40%!important;
+        transition: .5s;
+    }
+    .title-nav{
+        flex: 3;
+        height: 100%;
+        /* background-color: rgb(128, 92, 52); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-nav h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+    }
+    .cart-food{
+        flex: 1;
+        height: 100%;
+        /* background-color: rgb(161, 139, 112); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap-cart-icon{
+        width: 30%;
+        height: 80%;
+        border: 2px solid #57CAD5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .fill-icon-left{
+        width: 50%;
+        height: 100%;
+        background-color: #57CAD5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fill-icon-left i{
+        font-size: 25px;
+        color: #000;;
+    }
+    .fill-icon-right{
+        width: 50%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fill-icon-right h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: #57CAD5;
+    }
+}
 </style>

@@ -53,4 +53,40 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
   }
+  @media (min-width: 1044px){
+    .card-food{
+      width: 180px;
+      height: 190px;
+    }
+     .card-food a img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  .details-card{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .details-card i{
+    color: #cacaca;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .details-card i a{
+    color: #333;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+  }
+  }
+    @media (min-width: 1244px){
+    .card-food{
+    width: 210px;
+    height: 220px;
+    }
+  }
 </style>

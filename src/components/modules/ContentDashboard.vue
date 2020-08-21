@@ -219,4 +219,9 @@ export default {
     margin: 5px;
     cursor:pointer;
 }
+@media (min-width: 1045px){
+  .menu-container{
+    width: 86vw;
+  }
+}
 </style>
