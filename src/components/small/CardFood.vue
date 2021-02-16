@@ -3,7 +3,7 @@
         <a>
             <img
             @click="$emit('clickCard')"
-            :src="image" alt="image">
+            :src="baseUrl + '/img/' + image" alt="image">
         </a>
         <div class="details-card">
             <i class="fab fa-elementor"> <a href="#"><b>{{ title }}</b></a></i>
@@ -15,7 +15,15 @@
 <script>
 export default {
   props: ['image', 'title', 'harga'],
-  name: 'CardFood'
+  name: 'CardFood',
+  data () {
+    return {
+      baseUrl: ''
+    }
+  },
+  mounted () {
+    this.baseUrl = process.env.VUE_APP_BASE_URL
+  }
 }
 </script>
 
