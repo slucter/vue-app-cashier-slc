@@ -12,7 +12,7 @@
                 v-for="dta in cartMenu"
                 :key="dta.data.id_menu"
                 class="wrap-cart-items">
-                    <img :src="dta.data.img_menu" alt="product1">
+                    <img :src="baseUrl + '/img/' + dta.data.img_menu" alt="product1">
                     <div class="wrap-detail-cart">
                         <div class="title-items-cart">
                             <h3>{{dta.data.name_menu}}</h3>
@@ -55,7 +55,8 @@ export default {
   name: 'SidebarCart',
   data () {
     return {
-      total: 0
+      total: 0,
+      baseUrl: ''
     }
   },
   computed: {
@@ -85,6 +86,9 @@ export default {
   },
   updated () {
     this.totalPrice()
+  },
+  mounted () {
+    this.baseUrl = process.env.VUE_APP_BASE_URL
   }
 }
 </script>
